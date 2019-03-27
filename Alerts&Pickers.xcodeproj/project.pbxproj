@@ -114,6 +114,7 @@
 		65CFE7DA21EBDE5600A51361 /* SegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3BB2912008B46500E06F8F /* SegmentedControl.swift */; };
 		65CFE7DB21EBDE5600A51361 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3BB2922008B46500E06F8F /* TextField.swift */; };
 		65CFE7DC21EBDE5600A51361 /* PickerStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28F1C412179EE04000F866F /* PickerStyle.swift */; };
+		24EBE2F6224C001800DD6BEB /* RLBAlertsPickers.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 24EBE2F5224C001800DD6BEB /* RLBAlertsPickers.podspec */; };
 		D71CAE0E2188386000B22700 /* TelegramPickerConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71CAE0D2188386000B22700 /* TelegramPickerConfigurator.swift */; };
 		D725CCC5216CBE6D001A6974 /* TelegramPickerResourceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D725CCC4216CBE6D001A6974 /* TelegramPickerResourceProvider.swift */; };
 		D725CCC8216CD16F001A6974 /* ExampleTelegramPickerLocalizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D725CCC7216CD16F001A6974 /* ExampleTelegramPickerLocalizer.swift */; };
@@ -238,6 +239,7 @@
 		65CFE76B21EBDE2A00A51361 /* AlertsAndPickers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlertsAndPickers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65CFE76D21EBDE2A00A51361 /* AlertsAndPickers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlertsAndPickers.h; sourceTree = "<group>"; };
 		65CFE76E21EBDE2A00A51361 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24EBE2F5224C001800DD6BEB /* RLBAlertsPickers.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RLBAlertsPickers.podspec; sourceTree = SOURCE_ROOT; };
 		D71CAE0D2188386000B22700 /* TelegramPickerConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramPickerConfigurator.swift; sourceTree = "<group>"; };
 		D725CCC4216CBE6D001A6974 /* TelegramPickerResourceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramPickerResourceProvider.swift; sourceTree = "<group>"; };
 		D725CCC7216CD16F001A6974 /* ExampleTelegramPickerLocalizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTelegramPickerLocalizer.swift; sourceTree = "<group>"; };
@@ -583,6 +585,7 @@
 		FA3BB2CB2008B87A00E06F8F /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				24EBE2F5224C001800DD6BEB /* RLBAlertsPickers.podspec */,
 				FA826F83200E8B6200ECC926 /* Viewers */,
 				FA3BB2932008B46600E06F8F /* Extensions */,
 				FA3BB2A12008B46800E06F8F /* Pickers */,
@@ -928,6 +931,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24EBE2F6224C001800DD6BEB /* RLBAlertsPickers.podspec in Resources */,
 				FABFAA66200C961500961895 /* Main.storyboard in Resources */,
 				FA3BB2CF2008B9FA00E06F8F /* LICENSE in Resources */,
 				FA3BB2BF2008B46900E06F8F /* Countries.bundle in Resources */,
@@ -1358,11 +1362,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5G7KR5X8K5;
+				DEVELOPMENT_TEAM = BJCX3TT77J;
 				INFOPLIST_FILE = "$(SRCROOT)/Example/Resources/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "im.dlg.alerts-pickers";
+				PRODUCT_BUNDLE_IDENTIFIER = "us.toot.alerts-pickers";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1374,11 +1378,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5G7KR5X8K5;
+				DEVELOPMENT_TEAM = BJCX3TT77J;
 				INFOPLIST_FILE = "$(SRCROOT)/Example/Resources/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "im.dlg.alerts-pickers";
+				PRODUCT_BUNDLE_IDENTIFIER = "us.toot.alerts-pickers";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

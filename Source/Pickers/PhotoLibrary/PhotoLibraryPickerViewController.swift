@@ -181,7 +181,7 @@ final public class PhotoLibraryPickerViewController: UIViewController {
             let alert = UIAlertController(title: "Permission denied", message: "\(productName) does not have access to contacts. Please, allow the application to access to your photo library.", preferredStyle: .alert)
             alert.addAction(title: "Settings", style: .destructive) { action in
                 if let settingsURL = URL(string: UIApplication.openSettingsURLString) {
-                    UIApplication.shared.open(settingsURL)
+                    UIApplication.shared.openURL(settingsURL)
                 }
             }
             alert.addAction(title: "OK", style: .cancel) { [unowned self] action in

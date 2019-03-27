@@ -101,14 +101,15 @@ public struct Contacts {
     /// Fetching Contacts from phone with Grouped By Alphabet
     ///
     /// - Parameter completionHandler: It will return Dictonary of Alphabets with Their Sorted Respective Contacts.
-     @available(iOS 10.0, *)
      public static func fetchContactsGroupedByAlphabets(completionHandler: @escaping (GroupedByAlphabetsFetchResults) -> ()) {
         
         let contactStore: CNContactStore = CNContactStore()
         let fetchRequest: CNContactFetchRequest = CNContactFetchRequest(keysToFetch: defaultKeysToFetch)
         var orderedContacts: [String: [CNContact]] = [String: [CNContact]]()
         CNContact.localizedString(forKey: CNLabelPhoneNumberiPhone)
-        fetchRequest.mutableObjects = false
+        if #available(iOS 10.0, *) {
+            fetchRequest.mutableObjects = false
+        }
         fetchRequest.unifyResults = true
         fetchRequest.sortOrder = .givenName
         do {
